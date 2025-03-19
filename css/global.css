@@ -1,0 +1,226 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+   
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #000000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.c1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    overflow: hidden; 
+}
+
+.c1 img {
+    width: 100%;
+    height: auto;
+    display: block; 
+}
+
+.hero-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+}
+
+.hero-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-section .read-more-button {
+    background-color: #199717;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+}
+
+.feature img {
+    width: 80px;
+    height: 80px;
+}
+
+.feature h2 {
+    font-size: 1.5em;
+    color: #199717;
+    margin: 10px 0;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #333;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mission-statement {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.mission-content {
+    flex: 1;
+    text-align: left;
+}
+
+.mission-image {
+    flex: 1;
+}
+
+.mission-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo, .footer-links, .social-icons {
+    width: 30%;
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Navigation Bar */
+    .nav-links {
+        display: none; 
+    }
+
+    /* Hero Section */
+    .hero-section h1 {
+        font-size: 2em;
+    }
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    /* Features Section */
+    .feature {
+        width: 45%; 
+    }
+
+    /* About Us Section */
+    .mission-statement {
+        flex-direction: column;
+    .mission-content, .mission-image {
+        width: 100%;
+    }
+    }
+    /* Footer Section */
+    .footer-logo, .footer-links, .social-icons {
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Features Section */
+    .feature {
+        width: 100%; 
+    }
+}
