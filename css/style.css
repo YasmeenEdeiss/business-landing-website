@@ -1,94 +1,93 @@
-
 /* Hero Section Styling */
 .c1 {
-    position: relative; 
-    text-align: center; 
-    color: #ffffff; 
+    position: relative;
+    text-align: center;
+    color: #ffffff;
 }
 
 .c1 img {
-    width: 100%; 
-    height: 600px; 
-    display: block; 
+    width: 100%;
+    height: auto; /* جعل الصورة تتكيف مع الشاشة */
+    display: block;
 }
+
 .hero-section {
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 80%; 
-    max-width: 800px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
 }
 
 .hero-section h1 {
-    font-size: 2.5em; 
-    margin-bottom: 20px; 
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .hero-section p {
-    font-size: 1.2em; 
-    color:#ffffff; 
-    margin-bottom: 30px; 
+    font-size: 1.2em;
+    color: #ffffff;
+    margin-bottom: 30px;
 }
 
 /* Button Styling */
 .hero-section .read-more-button {
-    background-color: #000000; 
-    color: #ffffff; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    font-size: 1em; 
-    cursor: pointer; 
-    transition: background-color 0.3s ease; 
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .hero-section .read-more-button:hover {
-    background-color: #145a12; /* Darker green on hover */
+    background-color: #145a12;
 }
-
-
 
 /* Features Section */
 .features {
     display: flex;
-    justify-content: center; /* Center the features horizontally */
-    gap: 40px; 
+    justify-content: center;
+    gap: 40px;
     padding: 50px 0;
     max-width: 800px;
-    margin: 0 auto; 
+    margin: 0 auto;
+    flex-wrap: wrap; /* جعل الصناديق تتراص عموديًا على الشاشات الصغيرة */
 }
 
 .feature {
     text-align: center;
-    width: 250px; 
-    height: 250px;
+    width: 250px;
+    height: auto; /* جعل الارتفاع يتكيف مع المحتوى */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid #ddd; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    background-color: #f9f9f9; 
-    padding: 20px; 
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 20px;
 }
 
 .feature img {
-    width: 80px; 
+    width: 80px;
     height: 80px;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
 }
 
-.feature h2 {
+.feature h3 {
     font-size: 1.5em;
     color: #199717;
-    margin: 0 0 10px 0; 
+    margin: 0 0 10px 0;
 }
 
 .feature p {
     font-size: 1em;
-    color: #3333;
+    color: #333;
     margin: 0;
 }
 
@@ -97,48 +96,81 @@
     text-align: center;
     font-size: 2em;
     color: #199717;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
+
 /* About Us Section Styling */
 .about-us {
-    padding: 40px 20px; 
-    background-color: #f9f9f9; 
-    text-align: center; 
-    
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
 }
 
 .con1 {
-    max-width: 1200px; 
-    margin: 0 auto; 
+    max-width: 1200px;
+    margin: 0 auto;
 }
-.section-title{
+
+.section-title {
     color: #199717;
 }
 
 /* Mission Statement Section */
-.mission-statement h2{
+.mission-statement h3 {
     color: #199717;
 }
+
 .mission-statement {
     display: grid;
-    align-items: center; 
-    gap: 40px; 
-    margin-bottom: 40px; 
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 40px;
 }
 
 .mission-content {
-    flex: 1; 
-    text-align: left; 
+    flex: 1;
+    text-align: left;
     color: #575857;
 }
 
 .mission-image {
-    flex: 1; 
+    flex: 1;
 }
 
 .mission-image img {
-    width: 100%; 
-    height: auto; 
-    border-radius: 10px; 
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .feature {
+        width: 100%;
+    }
+
+    .mission-statement {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-section p {
+        font-size: 0.9em;
+    }
+
+    .feature {
+        width: 100%;
+    }
+}

@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    overflow-x: hidden; /* منع التمرير الأفقي */
 }
 
 .container {
@@ -64,6 +65,7 @@ body {
     text-align: center;
     color: #ffffff;
     overflow: hidden;
+    padding-top: 80px; /* إضافة padding لاستيعاب الـ navbar الثابت */
 }
 
 .c1 img {
@@ -79,11 +81,14 @@ body {
     transform: translate(-50%, -50%);
     width: 90%;
     max-width: 800px;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 .hero-section h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    max-width: 100%;
 }
 
 .hero-section p {
@@ -121,7 +126,7 @@ body {
     height: 80px;
 }
 
-.feature h2 {
+.feature h3 {
     font-size: 1.5em;
     color: #199717;
     margin: 10px 0;
@@ -176,6 +181,10 @@ footer {
     align-items: center;
 }
 
+.footer-logo a {
+    color: #f4f4f4;
+}
+
 .footer-logo img {
     width: 180px;
     height: 65px;
@@ -191,7 +200,7 @@ footer {
 }
 
 .footer-links a {
-    color:#ffffff;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -216,7 +225,6 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Navigation Bar */
     .menu-toggle {
         display: block;
     }
@@ -225,7 +233,7 @@ footer {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #000;
@@ -241,21 +249,19 @@ footer {
         margin: 10px 0;
     }
 
-    /* Hero Section */
     .hero-section h1 {
         font-size: 2em;
     }
-    
+
     .hero-section p {
         font-size: 1em;
     }
 
-    /* Features Section */
     .feature {
-        width: 45%;
+        width: 100%;
+        margin-bottom: 30px;
     }
 
-    /* About Us Section */
     .mission-statement {
         flex-direction: column;
     }
@@ -264,21 +270,22 @@ footer {
         width: 100%;
     }
 
-    /* Footer Section */
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
-
-    .footer-logo, .footer-links, .social-icons {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
-    /* Features Section */
+    .hero-section h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-section p {
+        font-size: 0.9em;
+    }
+
     .feature {
         width: 100%;
     }
 }
-

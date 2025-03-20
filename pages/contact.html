@@ -31,7 +31,7 @@
         <h1 class="all-product-subtitle">Contact us</h1>
         <img
             src="../images/Green and White Gradient Shadow Modern Simple Minimalist Agrifarm Presentation.png"
-            alt="Background Image"
+            alt="Farmers using IoT-powered irrigation technology"
             allowfullscreen=""
             aria-hidden="false"
             tabindex="0">
@@ -47,23 +47,29 @@
                 <div class="form-input-box">
                     <div class="form-flex">
                         <div class="form-row">
+                            <label for="name">First Name</label>
                             <input type="text" name="name" placeholder="First Name" required>
                         </div>
                         <div class="form-row">
+                            <label for="name">Surname</label>
                             <input type="text" name="surename" placeholder="Surname" required>
                         </div>
                     </div>
                     <!-- Email input field -->
                     <div class="form-row">
+                        <label for="name">Email</label>
                         <input type="email" name="email" placeholder="Your Email Address" required>
                     </div>
                     <!-- Message textarea -->
                     <div class="form-row">
+                        <label for="name">Message</label>
                         <textarea name="message" placeholder="Write Your Message Here" required></textarea>
                     </div>
                 </div>
                 <!-- Submit button -->
-                <button type="submit">Send</button>
+                <label for="submit-btn" class="visually-hidden">Submit the contact form</label>
+                <button type="submit" aria-label="Send Message">Send</button>
+
             </form>
             <div class="response-message"></div>
         </div>
@@ -78,12 +84,15 @@
                     <a href="../index.html">
                         <img src="../images/Green and White Organic Agriculture Logo.png" alt="Website Logo">
                     </a>
-                    <p>Call: (480) 555-0103</p>
-                    <p>yasmeenediess@gmail.com</p>
+                    <address>
+                        <p>Call: <a href="tel:+14805550103">(480) 555-0103</a></p>
+                        <p>Email: <a href="mailto:yasmeenediess@gmail.com">yasmeenediess@gmail.com</a></p>
+                    </address>
+                    
                 </div>
                 <!-- Footer links -->
                 <div class="footer-links">
-                    <h5>Pages</h5>
+                    <h3>Pages</h3>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="/pages/contact.html">Contact Us</a></li>
