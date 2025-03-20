@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    overflow-x: hidden; /* منع التمرير الأفقي */
+    overflow-x: hidden;
 }
 
 .container {
@@ -65,7 +65,7 @@ body {
     text-align: center;
     color: #ffffff;
     overflow: hidden;
-    padding-top: 80px; /* إضافة padding لاستيعاب الـ navbar الثابت */
+    padding-top: 80px; 
 }
 
 .c1 img {
