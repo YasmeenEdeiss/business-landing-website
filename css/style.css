@@ -7,7 +7,7 @@
 
 .c1 img {
     width: 100%;
-    height: auto; /* جعل الصورة تتكيف مع الشاشة */
+    height: auto; 
     display: block;
 }
 
@@ -55,13 +55,13 @@
     padding: 50px 0;
     max-width: 800px;
     margin: 0 auto;
-    flex-wrap: wrap; /* جعل الصناديق تتراص عموديًا على الشاشات الصغيرة */
+    flex-wrap: wrap; 
 }
 
 .feature {
     text-align: center;
     width: 250px;
-    height: auto; /* جعل الارتفاع يتكيف مع المحتوى */
+    height: auto; 
     display: flex;
     flex-direction: column;
     justify-content: center;
